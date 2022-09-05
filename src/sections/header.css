@@ -1,0 +1,36 @@
+.spacing {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: white;
+}
+
+.headerNav {
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.header-styling {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 36.71px 0px;
+}
+
+.header-spacing {
+    justify-content: space-between;
+}
+
+.login-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.black-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
