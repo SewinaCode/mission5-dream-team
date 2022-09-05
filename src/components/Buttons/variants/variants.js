@@ -1,3 +1,5 @@
+//---------------------------Buttons------------------------
+
 export const redTag = {
   color: "#A31621",
   fontSize: "16px",
@@ -18,7 +20,16 @@ export const GreenBorderBtn = {
   color: "#13B52E",
   fontSize: "25px",
   fontWeight: "700",
-  padding: "16.9px 45px",
+  padding: "0px 15px",
+};
+
+export const GreenFillBtn = {
+  backgroundColor: "#13B52E",
+  borderColor: "#13B52E",
+  color: "#FFFFFF",
+  fontSize: "25px",
+  fontWeight: "700",
+  padding: "0px 80px",
 };
 
 export const blueLineTxt = {
@@ -40,4 +51,13 @@ export const blackTxt = {
   fontWeight: "700",
   fontSize: "16px",
   padding: "0px 8px",
+};
+
+//---------------------------Main Nav Buttons Variants------------------------
+
+export const mainNavBtn = {
+  backgroundColor: "#1A6CC2",
+  color: "white",
+  fontSize: "20px",
+  fontWeight: "700",
 };
