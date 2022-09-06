@@ -1,0 +1,26 @@
+import React from "react";
+import "./navigation.css";
+import NavList from "../components/Buttons/nav-li-btn";
+import ImageSections from "../components/imageSec";
+import SearchLogo from "E:/100 days of code/MRHQL5-Missions/mission5/mission5/src/assets/dropdown-arrow/search.png";
+
+export default function MainNav() {
+  return (
+    <nav className="main-navi">
+      <ul className="list-reset">
+        <NavList className="openSans-font" text="HOME" />
+        <NavList className="openSans-font" text="BUYING" />
+        <NavList className="openSans-font" text="SELLING" />
+        <NavList className="openSans-font" text="FINANCE" />
+        <NavList className="openSans-font" text="CAR INSURANCE" />
+        <NavList className="openSans-font" text="AUCTIONS" />
+        <NavList className="openSans-font" text="ABOUT US" />
+        <ImageSections
+          className="search-btn"
+          imageUrl={SearchLogo}
+          name="search-button"
+        />
+      </ul>
+    </nav>
+  );
+}
