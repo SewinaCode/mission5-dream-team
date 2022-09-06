@@ -1,5 +1,5 @@
 import React from "react";
-import "./navigation.css";
+import "./mainNav.css";
 import NavList from "../components/Buttons/nav-li-btn";
 import ImageSections from "../components/imageSec";
 import SearchLogo from "../assets/dropdown-arrow/search.png";
