@@ -2,7 +2,7 @@ import React from "react";
 import "./navigation.css";
 import NavList from "../components/Buttons/nav-li-btn";
 import ImageSections from "../components/imageSec";
-import SearchLogo from "E:/100 days of code/MRHQL5-Missions/mission5/mission5/src/assets/dropdown-arrow/search.png";
+import SearchLogo from "../assets/dropdown-arrow/search.png";
 
 export default function MainNav() {
   return (
