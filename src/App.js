@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./sections/header";
 import Introduction from "./sections/Intro-Section";
 import MainNav from "./sections/mainNav";
+import Policies from "./sections/policy-sec";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <MainNav />
       <Introduction />
+      <Policies />
     </div>
   );
 }
