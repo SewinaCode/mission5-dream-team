@@ -1,7 +1,7 @@
 /* Car image */
 
 .bg-carImg {
-    background-image: url('E:/100 days of code/MRHQL5-Missions/mission5/mission5/src/assets/intro-img.png');
+    background-image: url('../assets/intro-img.png');
     height: 907px;
     display: flex;
     flex-direction: row;
