@@ -6,6 +6,7 @@ import {
   GreenFillBtn,
 } from "../components/Buttons/variants/variants";
 
+
 export default function Introduction() {
   return (
     <>

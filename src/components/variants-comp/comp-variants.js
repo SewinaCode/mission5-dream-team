@@ -23,6 +23,10 @@ export const BlackText = {
   color: "#4B5563",
 };
 
+export const BlackText = {
+  color: "#4B5563",
+};
+
 //Pricing card variants
 export const NormalVariant = {
   border: "1px solid #2563EBC4",
