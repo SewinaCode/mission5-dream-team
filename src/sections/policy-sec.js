@@ -1,13 +1,15 @@
 import React from "react";
-import { NormalCard, MiddleBar } from "../components/card-comp";
+import { NormalCard, MiddleBar, MostPopular } from "../components/card-comp";
 import { HeadingTxt, ParaText, Link } from "../components/sec-heading";
 import {
+  BlackText,
+  BlueBar,
+  BlueText,
+  CardVariant,
   HeadingBlk,
   LinkHeader,
-  BlueText,
   NormalVariant,
   WhiteBar,
-  BlueBar,
 } from "../components/variants-comp/comp-variants";
 import "./policy-sec.css";
 import "../components/card-comp.css";
@@ -44,15 +46,39 @@ export default function Policies() {
           }
           desc={
             <ParaText
-              className="section-header xsml-weight sml-font-header "
+              className="section-header xsml-weight sml-font-header add-top-padding card-height "
               text="Cover for your car if it is damaged by fire, stolen, or you accidentally damage someone else’s property with your car."
             />
           }
           bar={
             <MiddleBar
-              className="section-header med-weight bt-font-header xsml-height"
+              className="section-header med-weight bt-font-header xsml-height add-margin"
               variant={WhiteBar}
               text="Benefits & Features"
+            />
+          }
+        />
+        <MostPopular
+          variant={CardVariant}
+          heading={
+            <HeadingTxt
+              className="section-header xlg-font-header med-weight med-height"
+              variant={BlueText}
+              text="Comprehensive Everyday Plus"
+            />
+          }
+          desc={
+            <ParaText
+              className="section-header xsml-weight sml-font-header card-height"
+              variant={BlackText}
+              text="Keep yourself fully protected with our most popular cover. We'll cover damage to your car, as well as damage you  cause to someone else's car or property."
+            />
+          }
+          bar={
+            <MiddleBar
+              className="section-header med-weight med-font-header xsml-height add-margin"
+              variant={BlueBar}
+              text="MOST POPULAR"
             />
           }
         />
@@ -60,43 +86,20 @@ export default function Policies() {
           variant={NormalVariant}
           heading={
             <HeadingTxt
-              className="section-header lg-font-header sml-weight bt-height"
+              className="section-header lg-font-header sml-weight bt-height add-padding"
               variant={BlueText}
-              text="Third Party Property Damage"
+              text="Third Party, Fire & Theft"
             />
           }
           desc={
             <ParaText
-              className="section-header xsml-weight sml-font-header "
-              text="Cover for your car if it is damaged by fire, stolen, or you accidentally damage someone else’s property with your car."
+              className="section-header xsml-weight sml-font-header add-top-padding card-height "
+              text="Basic cover for you if you damage someone else’s property with your car"
             />
           }
           bar={
             <MiddleBar
-              className="section-header med-weight bt-font-header xsml-height"
-              variant={WhiteBar}
-              text="Benefits & Features"
-            />
-          }
-        />
-        <NormalCard
-          variant={NormalVariant}
-          heading={
-            <HeadingTxt
-              className="section-header lg-font-header sml-weight bt-height"
-              variant={BlueText}
-              text="Third Party Property Damage"
-            />
-          }
-          desc={
-            <ParaText
-              className="section-header xsml-weight sml-font-header "
-              text="Cover for your car if it is damaged by fire, stolen, or you accidentally damage someone else’s property with your car."
-            />
-          }
-          bar={
-            <MiddleBar
-              className="section-header med-weight bt-font-header xsml-height"
+              className="section-header med-weight bt-font-header xsml-height add-margin add-top-margin"
               variant={WhiteBar}
               text="Benefits & Features"
             />
