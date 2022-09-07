@@ -19,6 +19,7 @@ export default function MainNav() {
           className="search-btn"
           imageUrl={SearchLogo}
           name="search-button"
+          to="/"
         />
       </ul>
     </nav>

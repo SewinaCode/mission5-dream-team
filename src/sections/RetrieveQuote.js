@@ -11,7 +11,7 @@ export default function RetrieveQuote() {
   
   return (
     <>
-       <h1 class="text-yellow-500">hello world</h1>
+       <h1 className="text-yellow-500">hello world</h1>
     </>
   );
 } 
