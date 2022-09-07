@@ -89,3 +89,21 @@
 .no-margin {
     margin: 0;
 }
+
+.add-margin {
+    margin: 20px 0px;
+}
+
+.add-top-margin {
+    margin-top: 45px;
+}
+
+/* Padding */
+
+.add-padding {
+    padding: 0px 20px;
+}
+
+.add-top-padding {
+    padding-top: 12px;
+}

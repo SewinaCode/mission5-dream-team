@@ -12,7 +12,7 @@ function MiddleBar({ className, variant, text }) {
 
 function NormalCard({ variant, heading, desc, bar }) {
   return (
-    <div className="main-card card-comp-pad" style={variant}>
+    <div className="small-card main-card card-comp-pad" style={variant}>
       <div className="content-padding">
         {heading}
         {desc}
@@ -22,8 +22,19 @@ function NormalCard({ variant, heading, desc, bar }) {
   );
 }
 
-function MostPopular({ variant }) {
-  return <div className="main-card card-comp-pad " style={variant}></div>;
+function MostPopular({ variant, heading, desc, bar }) {
+  return (
+    <div
+      className="big-card main-card card-comp-pad selective-margin"
+      style={variant}
+    >
+      <div className="popular-padding">
+        {heading}
+        {desc}
+      </div>
+      {bar}
+    </div>
+  );
 }
 
 export { NormalCard, MostPopular, MiddleBar };
