@@ -4,7 +4,7 @@ import "./card-comp.css";
 import Tick from "../assets/tick.png";
 import Cross from "../assets/X.png";
 import Line from "../assets/Line 17.png";
-import { BlackText, BlueText } from "../components/variants-comp/comp-variants";
+import { BlueText } from "../components/variants-comp/comp-variants";
 import { HeadingTxt } from "../components/sec-heading";
 
 //Middle Bar component
@@ -23,7 +23,7 @@ function Features({ variant, text }) {
       className="feature-text xsml-weight sml-font-header sml-height features-pros"
       style={variant}
     >
-      <img className="feature-padding" src={Tick} />
+      <img className="feature-padding" src={Tick} alt="tick-img" />
       {text}
     </div>
   );
@@ -35,7 +35,7 @@ function Cons({ variant, text }) {
       className="feature-text xsml-weight sml-font-header sml-height features-pros"
       style={variant}
     >
-      <img className="feature-padding" src={Cross} />
+      <img className="feature-padding" src={Cross} alt="cross-img" />
       {text}
     </div>
   );
@@ -50,7 +50,7 @@ function Benefit({ lists }) {
         variant={BlueText}
         text="Optional Benefits"
       />
-      <img className="padding-top-bottom" src={Line} />
+      <img className="padding-top-bottom" src={Line} alt="benefit-img" />
       {lists}
     </div>
   );
