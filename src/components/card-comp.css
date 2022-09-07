@@ -34,3 +34,34 @@
 .popular-padding {
     padding: 0px 82px;
 }
+
+.feature-padding {
+    padding-right: 10px;
+}
+
+.features-cons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.features-pros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-styling {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    list-style: none;
+}
+
+.default-pad-remove {
+    padding-inline-start: 0px;
+}
+
+.list-padding {
+    padding: 17px 0px;
+}
