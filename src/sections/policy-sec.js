@@ -1,5 +1,12 @@
 import React from "react";
-import { NormalCard, MiddleBar, MostPopular } from "../components/card-comp";
+import {
+  NormalCard,
+  MiddleBar,
+  MostPopular,
+  Features,
+  Cons,
+  Benefit,
+} from "../components/card-comp";
 import { HeadingTxt, ParaText, Link } from "../components/sec-heading";
 import {
   BlackText,
@@ -13,6 +20,8 @@ import {
 } from "../components/variants-comp/comp-variants";
 import "./policy-sec.css";
 import "../components/card-comp.css";
+import Buttons from "../components/Buttons/Buttons";
+import { GreenFillBtn } from "../components/Buttons/variants/variants";
 
 export default function Policies() {
   return (
@@ -57,7 +66,48 @@ export default function Policies() {
               text="Benefits & Features"
             />
           }
+          lists={
+            <ul className="list-styling content-padding">
+              <li className="list-padding">
+                <Features variant={BlackText} text="Transport cover" />
+              </li>
+              <li className="list-padding">
+                <Features variant={BlackText} text="Replacement car cover" />
+              </li>
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Damage by uninsured drivers"
+                />
+              </li>
+              <li className="list-padding">
+                <Cons
+                  variant={BlackText}
+                  text="Emergency travel, accommodation and
+                        repairs"
+                />
+              </li>
+              <li className="list-padding">
+                <Cons variant={BlackText} text="Towing and storage costs" />
+              </li>
+            </ul>
+          }
+          options={
+            <Benefit
+              lists={
+                <ul className="list-styling default-pad-remove">
+                  <li className="">
+                    <Features
+                      variant={BlackText}
+                      text="Free windowscreen and glass replacement"
+                    />
+                  </li>
+                </ul>
+              }
+            />
+          }
         />
+
         <MostPopular
           variant={CardVariant}
           heading={
@@ -81,7 +131,72 @@ export default function Policies() {
               text="MOST POPULAR"
             />
           }
+          lists={
+            <ul className="list-styling content-padding">
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Transport and trailer cover "
+                />
+              </li>
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Windscreen and window glass cover"
+                />
+              </li>
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Replacement of stolen keys and recoding of locks"
+                />
+              </li>
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Lifetime guarantee on repairs we arrange"
+                />
+              </li>
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Emergency travel, accommodation and
+repairs"
+                />
+              </li>
+              <li className="list-padding">
+                <Features variant={BlackText} text="Towing and storage costs" />
+              </li>
+              <li className="list-padding">
+                <Features variant={BlackText} text="Replacement car covers" />
+              </li>
+            </ul>
+          }
+          options={
+            <Benefit
+              lists={
+                <ul className="list-styling default-pad-remove">
+                  <li className="">
+                    <Features
+                      variant={BlackText}
+                      text="Hire car after an event"
+                    />
+                  </li>
+                  <li className="list-padding">
+                    <Features variant={BlackText} text="Roadside assistance" />
+                  </li>
+                  <li>
+                    <Features
+                      variant={BlackText}
+                      text="Free windowscreen and glass replacement"
+                    />
+                  </li>
+                </ul>
+              }
+            />
+          }
         />
+
         <NormalCard
           variant={NormalVariant}
           heading={
@@ -104,8 +219,62 @@ export default function Policies() {
               text="Benefits & Features"
             />
           }
+          lists={
+            <ul className="list-styling content-padding">
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Transport and trailer cover"
+                />
+              </li>
+              <li className="list-padding">
+                <Cons
+                  variant={BlackText}
+                  text="Windscreen and window glass cover"
+                />
+              </li>
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Replacement of stolen keys and recoding of locks"
+                />
+              </li>
+              <li className="list-padding">
+                <Features
+                  variant={BlackText}
+                  text="Emergency travel, accommodation and
+                  repairs"
+                />
+              </li>
+              <li className="list-padding">
+                <Features variant={BlackText} text="Towing and storage costs" />
+              </li>
+              <li className="list-padding">
+                <Features variant={BlackText} text="Replacement car cover" />
+              </li>
+            </ul>
+          }
+          options={
+            <Benefit
+              lists={
+                <ul className="list-styling default-pad-remove">
+                  <li className="">
+                    <Features
+                      variant={BlackText}
+                      text="Free windowscreen and glass replacement"
+                    />
+                  </li>
+                </ul>
+              }
+            />
+          }
         />
       </div>
+      <Buttons
+        className="inter-font filledbtns quote-btns green"
+        variant={GreenFillBtn}
+        text="GET A QUOTE"
+      />
     </div>
   );
 }
