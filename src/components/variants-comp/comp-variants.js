@@ -13,6 +13,7 @@ export const LinkHeader = {
   paddingTop: "14px",
 };
 
+//Text Variants
 export const BlueText = {
   color: "#1A6CC2",
   letterSpacing: "1px",
@@ -22,6 +23,11 @@ export const BlackText = {
   color: "#4B5563",
 };
 
+export const BlackText = {
+  color: "#4B5563",
+};
+
+//Pricing card variants
 export const NormalVariant = {
   border: "1px solid #2563EBC4",
 };
@@ -31,6 +37,7 @@ export const CardVariant = {
   width: "540px",
 };
 
+//Mid bar variant
 export const WhiteBar = {
   backgroundColor: "#F3F4F6",
   color: "#1A6CC2",
@@ -42,3 +49,5 @@ export const BlueBar = {
   color: "#A31621",
   padding: "40px 163px",
 };
+
+//Tick or Cross Variant

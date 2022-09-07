@@ -16,6 +16,11 @@
     text-align: center;
 }
 
+.feature-text {
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
 /* Section Header Font Sizing */
 .xlg-font-header {
     font-size: 36px
@@ -35,6 +40,10 @@
 
 .sml-font-header {
     font-size: 18px
+}
+
+.sml-font-para {
+    font-size: 17px;
 }
 
 .xs-font-header {
@@ -76,6 +85,10 @@
     line-height: 30px;
 }
 
+.feat-height {
+    line-height: 20px;
+}
+
 .sml-height {
     line-height: 19.2px;
 }
@@ -104,6 +117,9 @@
     padding: 0px 20px;
 }
 
+.padding-top-bottom {
+    padding: 20px 0px;
+}
 .add-top-padding {
     padding-top: 12px;
 }

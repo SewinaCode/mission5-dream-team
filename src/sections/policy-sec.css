@@ -1,5 +1,9 @@
 .section-pad {
     background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 52px 150px;
 }
