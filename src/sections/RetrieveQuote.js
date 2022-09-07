@@ -1,15 +1,24 @@
 import React from "react";
-import Header from "./header";
+import "./header.css";
+import Logo from "../assets/logo/turnerlogo-desktop.png";
+import ImageSections from "../components/imageSec";
+import { Link } from "react-router-dom"
 
 export default function RetrieveQuote() {
   
   return (
     <>
-        <Header />
+      <div className="header-styling header-spacing drop-shadow-xl">
+        <Link to="/">
+        <ImageSections imageUrl={Logo} />
+        </Link>
+      </div>
       <div className="relative">
-       <h2 className="text-black">hello world</h2>
-       <div className="bg-amber-600">
-
+       <div className="bg-amber-600 pl-20 mt-20">
+        <h2 className="text-black">Welcome Back</h2>
+        <div>
+          <p className="">Retrieve your quote</p>
+        </div>
        </div>
        <footer class="pt-24 fixed w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-sky-600">
         <span class="text-sm text-white sm:text-center">© Copyright 2022 Company Name.
