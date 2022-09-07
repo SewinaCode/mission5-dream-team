@@ -17,9 +17,9 @@ function ParaText({ className, text, variant }) {
   );
 }
 
-function Link({ className, text, variant }) {
+function Link({ className, text, variant, path }) {
   return (
-    <a className={className} style={variant}>
+    <a href={path} className={className} style={variant}>
       {text}
     </a>
   );

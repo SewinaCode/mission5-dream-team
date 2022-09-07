@@ -15,6 +15,11 @@ export const LinkHeader = {
 
 export const BlueText = {
   color: "#1A6CC2",
+  letterSpacing: "1px",
+};
+
+export const BlackText = {
+  color: "#4B5563",
 };
 
 export const NormalVariant = {
@@ -24,18 +29,16 @@ export const NormalVariant = {
 export const CardVariant = {
   border: "5px solid #1A6CC2",
   width: "540px",
-  height: "997px",
 };
 
 export const WhiteBar = {
   backgroundColor: "#F3F4F6",
   color: "#1A6CC2",
-  width: "492px",
-  padding: "18.5px 0px",
+  padding: "30px 0px",
 };
 
 export const BlueBar = {
-  backgroundColor: "#3274B8",
+  background: "rgba(26, 108, 194, 0.29)",
   color: "#A31621",
-  padding: "20px 163px",
+  padding: "40px 163px",
 };
