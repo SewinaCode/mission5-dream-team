@@ -6,10 +6,7 @@ name: Deploy to Firebase Hosting on PR
 jobs:
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
-    runs-on: ${{matrix.os}}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
@@ -18,3 +15,11 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIR_PIPELINE_4B873 }}'
           projectId: fir-pipeline-4b873
+      -name: build and push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: docker push nicocaba3/docker-work
+          tag: mission-5
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
