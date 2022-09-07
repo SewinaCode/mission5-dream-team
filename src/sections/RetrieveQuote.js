@@ -1,16 +1,11 @@
 import React from "react";
-// import Buttons from "../components/Buttons/Buttons";
-// import { RedBorderBtn } from "../components/Buttons/variants/variants";
-
+import Header from "./header";
 
 export default function RetrieveQuote() {
-  // const handleClick = () => {
-  //   alert("button clicked");
-  // };
-  console.log("hi i am here")
   
   return (
     <>
+        <Header />
        <h1 className="text-yellow-500">hello world</h1>
     </>
   );
