@@ -23,5 +23,15 @@ describe('App renders all different home components', () => {
     expect(textSection).toBeInTheDocument();
   
   });
+
+  test('renders MainNav component in App', () => {
+    render(<App />);
+    const textSection = screen.getByText(/AUCTIONS/i);
+    const textSection2 = screen.getByText(/FINANCE/i);
+    const textSection3 = screen.getByText(/SELLING/i);
+    expect(textSection2).toBeInTheDocument();
+    expect(textSection3).toBeInTheDocument();
+    expect(textSection).toBeInTheDocument();
+  });
   
 })
