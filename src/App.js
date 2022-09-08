@@ -1,5 +1,5 @@
 import "./App.css";
-import RetrieveQuote from "./sections/RetrieveQuote"
+import RetrieveQuote from "./pages/RetrieveQuote"
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Home from "./pages/HomePage";
 
