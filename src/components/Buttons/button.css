@@ -69,7 +69,9 @@ button {
 }
 
 .arrow {
-    height: 14.75px;
+    display: flex;
+    justify-content: baseline;
+    height: 14px;
     padding: 0px 14px;
 }
 

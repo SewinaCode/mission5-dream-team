@@ -11,13 +11,13 @@ import HelpFeatHeading from "./help-feat";
 
 //Image import
 import AccidentClaims from "../../assets/accident_claims.png";
-// import Membership from "../../assets/membership_benefits.png";
-// import Payment from "../../assets/payment_enquiries.png";
-// import PolicyRelation from "../../assets/policy_related_enquiries.png";
+import Membership from "../../assets/membership_benefits.png";
+import Payment from "../../assets/payment_enquiries.png";
+import PolicyRelation from "../../assets/policy_related_enquiries.png";
 
 export default function WhatHelp() {
   return (
-    <div style={GreyBlue}>
+    <div className="helpfeat-img-pad" style={GreyBlue}>
       <HeadingTxt
         className="section-header lg-weight xlg-font-header med-height pad-top-big"
         variant={HeadingWht}
@@ -38,12 +38,32 @@ export default function WhatHelp() {
           />
         </div>
       </div>
-      <HelpFeatHeading
-        classname="section-link bt-font-header med-weight card-height can-help-column can-help-baseline"
-        variant={DarkBlueText}
-        text="Accidents Claims"
-        image={AccidentClaims}
-      />
+      <div className="can-help-align">
+        <HelpFeatHeading
+          classname="section-link bt-font-header med-weight card-height can-help-column can-help-baseline"
+          variant={DarkBlueText}
+          text="Accidents Claims"
+          image={AccidentClaims}
+        />
+        <HelpFeatHeading
+          classname="section-link bt-font-header med-weight card-height can-help-column can-help-baseline"
+          variant={DarkBlueText}
+          text="Membership Benefits"
+          image={Membership}
+        />
+        <HelpFeatHeading
+          classname="section-link bt-font-header med-weight card-height can-help-column can-help-baseline"
+          variant={DarkBlueText}
+          text="Payment Enquiries"
+          image={Payment}
+        />
+        <HelpFeatHeading
+          classname="section-link bt-font-header med-weight card-height can-help-column can-help-baseline"
+          variant={DarkBlueText}
+          text="Policy related Enquires"
+          image={PolicyRelation}
+        />
+      </div>
     </div>
   );
 }

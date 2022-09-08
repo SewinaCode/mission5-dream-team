@@ -62,3 +62,7 @@ export const LightBlue = {
 export const GreyBlue = {
   backgroundColor: "#6A7EA5",
 };
+
+export const WhiteBG = {
+  backgroundColor: "white",
+};

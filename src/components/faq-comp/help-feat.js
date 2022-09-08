@@ -6,10 +6,13 @@ import { GreyBlue } from "../variants-comp/comp-variants";
 
 function HelpFeatHeading({ classname, variant, text, image }) {
   return (
-    <div className="color-height can-help-column" style={GreyBlue}>
+    <div
+      className="color-height can-help-column helpfeat-img-pad"
+      style={GreyBlue}
+    >
       <div className={classname} style={variant}>
         <img src={image} alt={text} />
-        <div>{text}</div>
+        <div className="img-text">{text}</div>
       </div>
     </div>
   );
