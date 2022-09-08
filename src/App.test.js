@@ -33,5 +33,11 @@ describe('App renders all different home components', () => {
     expect(textSection3).toBeInTheDocument();
     expect(textSection).toBeInTheDocument();
   });
+
+  test('renders policy-sec component in App', () => {
+    render(<App />);
+    const textSection = screen.getByText(/Comprehensive Everyday Plus/i);
+    expect(textSection).toBeInTheDocument();
+  });
   
 })
