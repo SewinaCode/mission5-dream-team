@@ -142,3 +142,9 @@
     padding-top: 48px;
 }
 
+/* Cursor styling */
+
+.pointer {
+    cursor: pointer;
+}
+

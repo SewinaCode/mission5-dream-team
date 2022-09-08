@@ -3,6 +3,7 @@ import Header from "../sections/header";
 import Introduction from "../sections/Intro-Section";
 import MainNav from "../sections/mainNav";
 import Policies from "../sections/policy-sec";
+import TestimonySection from "../sections/testimonies";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Introduction />
       <Policies />
       <FAQ />
+      <TestimonySection />
     </>
   );
 }
