@@ -69,10 +69,12 @@ button {
 }
 
 .arrow {
+    cursor: pointer;
     display: flex;
     justify-content: baseline;
     height: 14px;
     padding: 0px 14px;
+
 }
 
 .text-arrow {

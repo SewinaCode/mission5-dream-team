@@ -5,11 +5,25 @@
     justify-content: center;
 }
 
+.general-baseline {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .can-help-column {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
+}
+
+.client-card-column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .can-help-baseline {
@@ -33,6 +47,10 @@
 
 .img-text {
     margin: 18px 0px;
+}
+
+.img-text-side {
+    margin: 0px 25px;
 }
 
 .med-margin-18 {

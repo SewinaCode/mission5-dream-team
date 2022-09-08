@@ -10,6 +10,10 @@ import RedArrow from "../../assets/red-dropdown-arrow.png";
 import LongerLine from "../../assets/Line 18.png";
 
 function Questions({ text }) {
+  const clickTest = () => {
+    console.log("arrow button click working");
+  };
+
   return (
     <div className="feat-height ">
       <div className="faq-ques-spacing can-help-align">
@@ -18,7 +22,12 @@ function Questions({ text }) {
           variant={BlackText}
           text={text}
         />
-        <img className="arrow" src={RedArrow} alt="red-arrow" />
+        <img
+          onClick={clickTest}
+          className="arrow"
+          src={RedArrow}
+          alt="red-arrow"
+        />
       </div>
       <img
         className="padding-top-bottom"

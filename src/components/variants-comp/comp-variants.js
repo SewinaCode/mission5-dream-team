@@ -27,6 +27,10 @@ export const BlackText = {
   color: "#4B5563",
 };
 
+export const DarkBlackText = {
+  color: "black",
+};
+
 //Pricing card variants
 export const NormalVariant = {
   border: "1px solid #2563EBC4",
@@ -59,8 +63,16 @@ export const LightBlue = {
   backgroundColor: "#DCE4EC",
 };
 
+export const DarkBlue = {
+  backgroundColor: "#1A6CC2",
+};
+
 export const GreyBlue = {
   backgroundColor: "#6A7EA5",
+};
+
+export const DarkGrey = {
+  backgroundColor: "#DCE4EC3B",
 };
 
 export const WhiteBG = {
