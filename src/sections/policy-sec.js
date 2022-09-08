@@ -17,6 +17,7 @@ import {
   LinkHeader,
   NormalVariant,
   WhiteBar,
+  Grey,
 } from "../components/variants-comp/comp-variants";
 import "./policy-sec.css";
 import "../components/card-comp.css";
@@ -25,7 +26,7 @@ import { GreenFillBtn } from "../components/Buttons/variants/variants";
 
 export default function Policies() {
   return (
-    <div className="section-pad">
+    <div className="section-pad" style={Grey}>
       <div className="section-txt">
         <HeadingTxt
           className="section-header xlg-font-header lg-weight med-height"

@@ -14,6 +14,10 @@ export const LinkHeader = {
 };
 
 //Text Variants
+export const DarkBlueText = {
+  color: "#1D4ED8",
+};
+
 export const BlueText = {
   color: "#1A6CC2",
   letterSpacing: "1px",
@@ -46,4 +50,15 @@ export const BlueBar = {
   padding: "40px 163px",
 };
 
-//Tick or Cross Variant
+//Section background color
+export const Grey = {
+  backgroundColor: "#F3F4F6",
+};
+
+export const LightBlue = {
+  backgroundColor: "#DCE4EC",
+};
+
+export const GreyBlue = {
+  backgroundColor: "#6A7EA5",
+};

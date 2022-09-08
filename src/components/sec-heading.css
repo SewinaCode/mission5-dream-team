@@ -124,3 +124,12 @@
 .add-top-padding {
     padding-top: 12px;
 }
+
+.general-padding {
+    padding: 40px 150px;
+}
+
+.pad-top-big {
+    padding-top: 48px;
+}
+
