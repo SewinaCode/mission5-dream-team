@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Buttons from "../components/Buttons/Buttons";
 
 import {
-  GreenFillBtn,
+  GreenFillBtn1,
 } from "../components/Buttons/variants/variants";
 
 export default function RetrieveQuote() {
@@ -42,8 +42,8 @@ export default function RetrieveQuote() {
       </div>
       <div className="relative">
         <h2 className="text-black mont-font text-left font-semibold text-4xl pl-24 mt-24">Welcome Back</h2>
-        <div className="drop-shadow-xl bg-white grid ml-40 max-w-4xl mt-12 flex py-8 px-12">
-          <p className="font-medium text-3xl border-rose-800 border-b-4 pb-6">Retrieve your quote</p>
+        <div className="drop-shadow-xl mb-14 bg-white grid ml-40 max-w-4xl mt-12 flex py-8 px-12">
+          <p className="font-medium text-slate-800 text-3xl border-rose-800 border-b-4 pb-6">Retrieve your quote</p>
           <div className="flex grid-reverse w-full justify-between">
             <p className="mt-12 text-xl">Quote number</p>
             <form className="mt-8">
@@ -58,18 +58,21 @@ export default function RetrieveQuote() {
               <input type="text" className="border-2 shrink p-3 ml-4 rounded-xl border-blue-500" onChange={handleChange} name="year" placeholder={text3} size="5" />
             </form>
           </div>
-          <div className="flex container justify-end mt-10">
+          <div className="flex container border-b-2 justify-end py-10 border-black border-dashed font-medium">
             <form>
               <Buttons
-              className="border rounded-3xl "
-              variant={GreenFillBtn}
+              className="border rounded-full"
+              variant={GreenFillBtn1}
               text="YOUR QUOTE"
               onClick={handleSubmit}
               />
             </form>
           </div>
+          <div className="text-lg object-cover flex justify-center pt-4">
+            <p>Please refer to our privacy policy for more information on how we comply with law.</p>
+          </div>
         </div>
-       <footer class="pt-24 fixed w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-sky-600">
+       <footer class="pt-24 w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-sky-600">
         <span class="text-sm text-white sm:text-center">© Copyright 2022 Company Name.
         </span>
         <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
