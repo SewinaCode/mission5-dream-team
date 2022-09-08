@@ -8,18 +8,19 @@ export default function RetrieveQuote() {
   
   return (
     <>
+    <div className="bg-gray-100">
       <div className="header-styling header-spacing drop-shadow-xl">
         <Link to="/">
         <ImageSections imageUrl={Logo} />
         </Link>
       </div>
       <div className="relative">
-       <div className="bg-amber-600 pl-20 mt-20">
-        <h2 className="text-black">Welcome Back</h2>
-        <div>
-          <p className="">Retrieve your quote</p>
+        <h2 className="text-black mont-font text-left font-semibold text-4xl pl-24 mt-24">Welcome Back</h2>
+        <div className="drop-shadow-xl bg-white grid ml-40 max-w-4xl mt-12 flex py-8 px-12">
+        <p className="font-medium text-3xl border-rose-800 border-b-4 pb-6">Retrieve your quote</p>
+        <p className="mt-12 text-xl">Quote number</p>
+        <p className="mt-6 text-xl">Date of birth</p>
         </div>
-       </div>
        <footer class="pt-24 fixed w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-sky-600">
         <span class="text-sm text-white sm:text-center">© Copyright 2022 Company Name.
         </span>
@@ -39,6 +40,7 @@ export default function RetrieveQuote() {
         </ul>
        </footer>
       </div>
+    </div>
     </>
   );
 } 
