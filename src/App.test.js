@@ -45,5 +45,11 @@ describe('App renders all different home components', () => {
     const textSection = screen.getByText(/Frequently Asked Questions/i);
     expect(textSection).toBeInTheDocument();
   });
+
+  test('renders testimonies component in App', () => {
+    render(<App />);
+    const textSection = screen.getByText(/Perfectionist Pam/i);
+    expect(textSection).toBeInTheDocument();
+  });
   
 })
