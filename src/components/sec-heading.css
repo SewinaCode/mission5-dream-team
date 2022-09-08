@@ -59,6 +59,10 @@
     font-weight: 700
 }
 
+.bt-weight {
+    font-weight: 600;
+}
+
 .sml-weight {
     font-weight: 500;
 }
@@ -119,6 +123,7 @@
 
 .padding-top-bottom {
     padding: 20px 0px;
+    width: 100%;
 }
 
 .add-top-padding {
@@ -127,6 +132,10 @@
 
 .general-padding {
     padding: 40px 150px;
+}
+
+.dropdown-ques-padding {
+    padding: 40px 298px;
 }
 
 .pad-top-big {
