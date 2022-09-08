@@ -1,0 +1,28 @@
+.can-help-align {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.can-help-column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.can-help-baseline {
+    position: relative;
+    top: 10%;
+}
+
+.contact-us-pad {
+    padding-left: 5px;
+}
+
+/* help-feat styling */
+
+.color-height {
+    height: 50px;
+}

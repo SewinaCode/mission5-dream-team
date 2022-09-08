@@ -1,3 +1,4 @@
+import FAQ from "../sections/faq-section";
 import Header from "../sections/header";
 import Introduction from "../sections/Intro-Section";
 import MainNav from "../sections/mainNav";
@@ -10,6 +11,7 @@ export default function Home() {
       <MainNav />
       <Introduction />
       <Policies />
+      <FAQ />
     </>
   );
 }
