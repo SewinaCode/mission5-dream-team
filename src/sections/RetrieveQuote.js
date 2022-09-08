@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import Logo from "../assets/logo/turnerlogo-desktop.png";
 import ImageSections from "../components/imageSec";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import Buttons from "../components/Buttons/Buttons";
+
+import {
+  GreenFillBtn,
+} from "../components/Buttons/variants/variants";
 
 export default function RetrieveQuote() {
-  
+  const [text, setText] = useState('e.g. ABC1234567890');
+  const [text1, setText1] = useState('day');
+  const [text2, setText2] = useState('month');
+  const [text3, setText3] = useState('year');
+
+  const handleChange = (e) => {
+    if (text) {
+      setText(e.target.value);
+    } else if (text1) {
+      setText1(e.target.value);
+    } else if (text2) {
+      setText2(e.target.value);
+    } else if (text3) {
+      setText3(e.target.value);
+    }
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('SUBMIT')
+  }
+
   return (
     <>
     <div className="bg-gray-100">
@@ -17,9 +43,31 @@ export default function RetrieveQuote() {
       <div className="relative">
         <h2 className="text-black mont-font text-left font-semibold text-4xl pl-24 mt-24">Welcome Back</h2>
         <div className="drop-shadow-xl bg-white grid ml-40 max-w-4xl mt-12 flex py-8 px-12">
-        <p className="font-medium text-3xl border-rose-800 border-b-4 pb-6">Retrieve your quote</p>
-        <p className="mt-12 text-xl">Quote number</p>
-        <p className="mt-6 text-xl">Date of birth</p>
+          <p className="font-medium text-3xl border-rose-800 border-b-4 pb-6">Retrieve your quote</p>
+          <div className="flex grid-reverse w-full justify-between">
+            <p className="mt-12 text-xl">Quote number</p>
+            <form className="mt-8">
+              <input type="text" className="border-2 p-3 border-blue-500" onChange={handleChange} name="NLP" placeholder={text} size="50" />
+            </form>
+          </div>
+          <div className="flex grid-reverse w-full justify-between">
+            <p className="mt-8 text-xl shrink-0">Date of birth</p>
+            <form className="mt-6">
+              <input type="text" className="border-2 shrink  p-3 rounded-xl border-blue-500" onChange={handleChange} name="day" placeholder={text1} size="5" />
+              <input type="text" className="border-2 shrink p-3 ml-4 rounded-xl border-blue-500" onChange={handleChange} name="month" placeholder={text2} size="25" />
+              <input type="text" className="border-2 shrink p-3 ml-4 rounded-xl border-blue-500" onChange={handleChange} name="year" placeholder={text3} size="5" />
+            </form>
+          </div>
+          <div className="flex container justify-end mt-10">
+            <form>
+              <Buttons
+              className="border rounded-3xl "
+              variant={GreenFillBtn}
+              text="YOUR QUOTE"
+              onClick={handleSubmit}
+              />
+            </form>
+          </div>
         </div>
        <footer class="pt-24 fixed w-full inset-x-0 bottom-0 pb-12 px-6 shadow md:flex md:items-center md:justify-between bg-sky-600">
         <span class="text-sm text-white sm:text-center">© Copyright 2022 Company Name.
