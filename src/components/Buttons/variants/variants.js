@@ -32,6 +32,15 @@ export const GreenFillBtn = {
   padding: "0px 80px",
 };
 
+export const GreenFillBtn1 = {
+  backgroundColor: "#13B52E",
+  borderColor: "#13B52E",
+  color: "#FFFFFF",
+  fontSize: "25px",
+  fontWeight: "700",
+  padding: "14px 30px",
+};
+
 export const blueLineTxt = {
   color: "#1A6CC2",
   fontWeight: "600",
