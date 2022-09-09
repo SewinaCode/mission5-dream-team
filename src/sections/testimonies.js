@@ -40,7 +40,8 @@ function TestimonySection() {
         />
         <section className="padding-top-bottom" />
       </div>
-      <div className="general-baseline">
+      <div className="can-help-align">
+        {" "}
         <img
           onClick={handleClick}
           className="add-padding pointer"
