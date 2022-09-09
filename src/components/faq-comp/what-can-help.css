@@ -26,6 +26,13 @@
     justify-content: space-evenly;
 }
 
+.space-evenly {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .can-help-baseline {
     position: relative;
     top: 10%;
@@ -43,6 +50,14 @@
 
 .helpfeat-img-pad {
     padding: 0px 102px;
+}
+
+.reason-padding {
+    padding-left: 163px;
+}
+
+.reason-margin {
+    margin-left:163px;
 }
 
 .img-text {
