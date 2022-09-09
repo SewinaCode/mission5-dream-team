@@ -4,6 +4,7 @@ import Introduction from "../sections/Intro-Section";
 import MainNav from "../sections/mainNav";
 import Policies from "../sections/policy-sec";
 import TestimonySection from "../sections/testimonies";
+import { WhyChooseT } from "../sections/why-choose-t";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Policies />
       <FAQ />
       <TestimonySection />
+      <WhyChooseT />
     </>
   );
 }
