@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./header.css";
 import Logo from "../assets/logo/turnerlogo-desktop.png";
 import ImageSections from "../components/imageSec";
 import { Link } from "react-router-dom";
